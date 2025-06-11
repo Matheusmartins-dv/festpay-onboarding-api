@@ -32,17 +32,9 @@ public sealed class ChangeAccountStatusCommandHandler(FestpayContext dbContext)
         CancellationToken cancellationToken
     )
     {
-        // TODO: DESCOMENTAR CÓDIGO E REMOVER O ACCOUNT MOCKADO
-        // var account =
-        //     await dbContext.Accounts.FindAsync(request.Id)
-        //     ?? throw new NotFoundException("Conta");
-
-        var account = new Account.Builder()
-            .WithName("Teste")
-            .WithDocument("12345678901")
-            .WithEmail("joao@gmail.com")
-            .WithPhone("11999999999")
-            .Build();
+         var account =
+             await dbContext.Accounts.FindAsync(request.Id)
+             ?? throw new NotFoundException("Conta");
 
         account.EnableDisable();
         dbContext.Accounts.Update(account);

@@ -63,3 +63,39 @@ public class InvalidHourlyRateException(decimal hourlyRate)
 {
     public decimal HourlyRate { get; } = hourlyRate;
 }
+
+public class InvalidValueToTransaction(decimal value)
+    : DomainException(
+        $"The value of transaction must be greater than zero, value is '{value}'",
+        nameof(value)
+    )
+{
+    public decimal value { get; } = value;
+}
+
+public class TransactionAlreadyCancelledException(bool isCanceled)
+    : DomainException(
+        $"The transaction has already been cancelled",
+        nameof(isCanceled)
+    )
+{
+    public bool isCanceled { get; } = isCanceled;
+}
+
+public class DestinationInvalidException(string accountid)
+    : DomainException(
+        $"Account source and account destinando must be diferentes",
+        nameof(accountid)
+    )
+{
+    public string accountid { get; } = accountid;
+}
+
+public class InvalidCancellationDateException(DateTime date)
+    : DomainException(
+        $"Cancellation transaction with a past date are not allowed, date of transaction was created is '{date}'",
+        nameof(date)
+    )
+{
+    public DateTime date { get; } = date;
+}

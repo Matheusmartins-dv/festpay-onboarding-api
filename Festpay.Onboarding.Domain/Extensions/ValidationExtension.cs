@@ -95,4 +95,17 @@ public static class ValidationExtension
 
         return numbers[12] == digit1 && numbers[13] == digit2;
     }
+
+    public static bool isValidValueTransaction(this decimal value)
+    {
+        if(value <= 0) return false;
+        return true;
+    }
+
+    public static bool SourceIsEqualDestinationAccount(this string sourceid, string destinationid)
+    {
+        if (sourceid == destinationid)
+            return true;
+        return false;
+    }
 }
