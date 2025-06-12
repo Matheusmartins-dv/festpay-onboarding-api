@@ -61,26 +61,4 @@ public class Transaction: EntityBase
             return _transaction;
         }
     }
-
-    public static Transaction Restore(
-        Guid id,
-        string sourceAccountId,
-        string destinationAccountId,
-        decimal value,
-        bool isCanceled,
-        DateTime createdUtc,
-        DateTime? deactivatedUtc
-    )
-    {
-        var transaction = new Transaction
-        {
-            SourceAccountId = sourceAccountId,
-            DestinationAccountId = destinationAccountId,
-            Value = value,
-            IsCanceled = isCanceled,
-        };
-
-        transaction.RestoreBase(id, createdUtc, deactivatedUtc);
-        return transaction;
-    }
 }
