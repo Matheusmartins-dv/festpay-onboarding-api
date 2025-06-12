@@ -14,40 +14,39 @@ O projeto segue o padrão **Vertical Slice Architecture**, onde cada operação 
 
 - **Criar Conta**
   - Criação de contas no sistema.
+  - Endpoint: `POST /api/v1/accounts`
 
-- **Depositar Dinheiro**
-  - Endpoint: `POST /accounts/deposit`
+- **Depositar Dinheiro ou Sacar Dinheiro**
   - Permite adicionar saldo a uma conta existente.
+  - Endpoint: `PATCH /api/v1/accounts/{id}/balance`
 
-- **Remover Dinheiro**
-  - Endpoint: `POST /accounts/remove`
-  - Permite remover saldo de uma conta existente (saque).
+- **Habilitar/Desabilitar Conta**
+  - Permite reativar ou desativar uma conta.
+  - Endpoint: `PATCH /api/v1/accounts/{id}`
 
-- **Habilitar Conta**
-  - Permite reativar uma conta desabilitada.
-
-- **Desabilitar Conta**
-  - Permite desativar uma conta para impedir movimentações.
+- **Recuperar Contas**
+  - Permiti vizualizar todas as contas registradas.
+  - Endpoint: `GET /api/v1/accounts`
 
 ---
 
 ### 💳 Transactions (Transações)
 
 - **Criar Transação**
-  - Endpoint: `POST /transactions`
+  - Endpoint: `POST /api/v1/transactions`
   - Cria uma nova transação entre contas.
 
 - **Listar Transações**
-  - Endpoint: `GET /transactions`
+  - Endpoint: `GET /api/v1/transactions`
   - Lista todas as transações registradas.
 
-- **Recuperar Transação por ID**
-  - Endpoint: `GET /transactions/{id}`
-  - Retorna os detalhes de uma transação específica.
+- **Cancelar Transãção**
+  - Endpoint: `POST /api/v1/transactions/cancel`
+  - Cancela uma transação.
 
-- **Cancelar Transação**
-  - Endpoint: `POST /transactions/cancel`
-  - Cancela uma transação existente, se elegível.
+- **Encontrar uma Transação**
+  - Endpoint: `GET /api/v1/transactions/{idTransaction}/accounts/{IdAccount}`
+  - Permiti encontrar uma transação específica.
 
 ---
 
@@ -61,6 +60,6 @@ O projeto segue o padrão **Vertical Slice Architecture**, onde cada operação 
 
 ## 📌 Considerações
 
-Este projeto está em desenvolvimento contínuo e segue boas práticas de DDD (Domain-Driven Design) e Clean Architecture onde aplicável, utilizando o EF Core como ORM e SQLite como banco de dados no ambiente local.
+Este projeto segue boas práticas de DDD (Domain-Driven Design) e Clean Architecture onde aplicável, utilizando o EF Core como ORM e SQLite como banco de dados no ambiente local.
 
 ---

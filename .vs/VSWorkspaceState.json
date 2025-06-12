@@ -5,10 +5,10 @@
     "\\Festpay.Onboarding.Application\\Features",
     "\\Festpay.Onboarding.Application\\Features\\V1",
     "\\Festpay.Onboarding.Application\\Features\\V1\\Account",
-    "\\Festpay.Onboarding.Domain",
+    "\\Festpay.Onboarding.Application\\Features\\V1\\Transact",
     "\\Festpay.Onboarding.Domain\\Entities",
     "\\Festpay.Onboarding.Domain\\Extensions"
   ],
-  "SelectedNode": "\\Festpay.Onboarding.Application\\Features\\V1\\Account\\GetAccounts.cs",
+  "SelectedNode": "\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\CreateTransaction.cs",
   "PreviewInSolutionExplorer": false
 }
