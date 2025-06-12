@@ -2,9 +2,9 @@ namespace Festpay.Onboarding.Domain.Entities;
 
 public class EntityBase
 {
-    public Guid Id { get; private set; }
-    public DateTime CreatedUtc { get; private set; } = DateTime.UtcNow;
-    public DateTime? DeactivatedUtc { get; private set; }
+    public Guid Id { get; protected set; }
+    public DateTime CreatedUtc { get; protected set; } = DateTime.UtcNow;
+    public DateTime? DeactivatedUtc { get; protected set; }
 
     public virtual void Validate() { }
 

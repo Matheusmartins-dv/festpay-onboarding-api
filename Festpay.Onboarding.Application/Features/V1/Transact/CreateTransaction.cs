@@ -1,12 +1,82 @@
-﻿using System;
+﻿using Carter;
+using Festpay.Onboarding.Application.Common.Constants;
+using Festpay.Onboarding.Application.Common.Exceptions;
+using Festpay.Onboarding.Domain.Entities;
+using Festpay.Onboarding.Infra.Context;
+using FluentValidation;
+using MediatR;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Festpay.Onboarding.Application.Common.Models;
 
-namespace Festpay.Onboarding.Application.Features.V1.Transact
+namespace Festpay.Onboarding.Application.Features.V1.Transact;
+public sealed record CreateTransactionCommand(
+    string SourceAccountId,
+    string DestinationAccountId,
+    decimal Value
+) : IRequest<bool>;
+
+public sealed class CreateTransactionCommandValidator : AbstractValidator<CreateTransactionCommand>
 {
-    internal class CreateTransaction
+    public CreateTransactionCommandValidator()
     {
+        RuleFor(x => x.SourceAccountId).NotEmpty().WithMessage("Id account source is required.");
+
+        RuleFor(x => x.DestinationAccountId)
+            .NotEmpty()
+            .WithMessage("Id account destination is required.");
+
+        RuleFor(x => x.Value)
+            .NotEmpty()
+            .WithMessage("Value of transaction is required");
+    }
+}
+
+public sealed class CreateTransactionCommandHandler(FestpayContext dbContext) : IRequestHandler<CreateTransactionCommand, bool>
+{
+    public async Task<bool> Handle(
+        CreateTransactionCommand request,
+        CancellationToken cancellationToken
+    )
+    {
+        Guid sourceAccountIdGuid = Guid.Parse(request.SourceAccountId);
+        Guid destinationAccountIdGuid = Guid.Parse(request.DestinationAccountId);
+
+        var sourceAccount = await dbContext.Accounts.FindAsync(sourceAccountIdGuid)
+            ?? throw new NotFoundException("Conta");
+
+        var destinationAccount = await dbContext.Accounts.FindAsync(destinationAccountIdGuid)
+            ?? throw new NotFoundException("Conta");
+
+        var transaction = new Transaction.Builder()
+            .WithSourceAccount( request.SourceAccountId )
+            .WithDestinationAccount( request.DestinationAccountId )
+            .WithValue(request.Value)
+            .Build();
+
+        await dbContext.Transactions.AddAsync(transaction, cancellationToken);
+        return await dbContext.SaveChangesAsync(cancellationToken) > 0;
+    }
+}
+
+public sealed class CreateTransactionEndpoint : ICarterModule
+{
+    public void AddRoutes(IEndpointRouteBuilder app)
+    {
+        app.MapPost($"{EndpointConstants.V1}{EndpointConstants.Transaction}",
+            async ([FromServices] ISender sender, [FromBody] CreateTransactionCommand command) =>
+            {
+                var result = await sender.Send(command);
+                return Result.Ok(result);
+            }
+        )
+        .WithTags(SwaggerTagsConstants.Transaction);
     }
 }
