@@ -46,13 +46,10 @@ public sealed class CreateTransactionCommandHandler(FestpayContext dbContext) : 
         CancellationToken cancellationToken
     )
     {
-        Guid sourceAccountIdGuid = Guid.Parse(request.SourceAccountId);
-        Guid destinationAccountIdGuid = Guid.Parse(request.DestinationAccountId);
-
-        var sourceAccount = await dbContext.Accounts.FindAsync(sourceAccountIdGuid)
+        var sourceAccount = await dbContext.Accounts.FindAsync(Guid.Parse(request.SourceAccountId))
             ?? throw new NotFoundException("Conta");
 
-        var destinationAccount = await dbContext.Accounts.FindAsync(destinationAccountIdGuid)
+        var destinationAccount = await dbContext.Accounts.FindAsync(Guid.Parse(request.DestinationAccountId))
             ?? throw new NotFoundException("Conta");
 
         var transaction = new Transaction.Builder()
@@ -61,7 +58,13 @@ public sealed class CreateTransactionCommandHandler(FestpayContext dbContext) : 
             .WithValue(request.Value)
             .Build();
 
+        sourceAccount.Withdraw(transaction.Value);
+        destinationAccount.Deposit(transaction.Value);
+
         await dbContext.Transactions.AddAsync(transaction, cancellationToken);
+        dbContext.Accounts.Update(sourceAccount);
+        dbContext.Accounts.Update(destinationAccount);
+
         return await dbContext.SaveChangesAsync(cancellationToken) > 0;
     }
 }

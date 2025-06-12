@@ -26,7 +26,18 @@ public class Account : EntityBase
         if (!Phone.IsValidPhone())
             throw new InvalidPhoneNumberException(Phone);
     }
+    
+    public void Deposit(decimal value)
+    {
+        Balance += value;
+    }
 
+    public void Withdraw(decimal value)
+    {
+        if(Balance<value)
+            throw new InvalidRemoveBalanceAccountException(value);
+        Balance -= value;
+    }
     public class Builder
     {
         private readonly Account _account = new();

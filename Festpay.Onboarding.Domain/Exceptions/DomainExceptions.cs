@@ -1,3 +1,5 @@
+using Festpay.Onboarding.Domain.Entities;
+
 namespace Festpay.Onboarding.Domain.Exceptions;
 
 public class DomainException : ArgumentException
@@ -99,3 +101,13 @@ public class InvalidCancellationDateException(DateTime date)
 {
     public DateTime date { get; } = date;
 }
+
+public class InvalidRemoveBalanceAccountException(decimal Value)
+    : DomainException(
+        $"The account does not have sufficient funds to perform this operation.Attempted withdrawal amount:'{Value}'",
+        nameof(Value)
+    )
+{
+    public decimal Value { get; } = Value;
+}
+
