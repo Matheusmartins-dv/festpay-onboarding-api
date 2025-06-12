@@ -43,11 +43,26 @@ public sealed class CancelTransactionCommandHandler(FestpayContext dbContext) : 
     )
     {
         var transaction = await dbContext.Transactions.FindAsync(Guid.Parse(request.IdTransaction));
+
         if (transaction == null)
+            throw new NotFoundException("Transaction");
         if (transaction.SourceAccountId != request.SourceAccountId)
             return false;
+
+        var sourceAccount = await dbContext.Accounts.FindAsync(Guid.Parse(request.SourceAccountId))
+            ?? throw new NotFoundException("Conta");
+
+        var destinationAccount = await dbContext.Accounts.FindAsync(Guid.Parse(transaction.DestinationAccountId))
+            ?? throw new NotFoundException("Conta");
+
+        sourceAccount.Deposit(transaction.Value);
+        destinationAccount.Withdraw(transaction.Value);
         transaction.CanceledTransaction();
+
         dbContext.Transactions.Update(transaction);
+        dbContext.Accounts.Update(destinationAccount);
+        dbContext.Accounts.Update(sourceAccount);
+
         return await dbContext.SaveChangesAsync(cancellationToken) > 0;
     }
 }
