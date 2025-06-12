@@ -29,12 +29,16 @@ public class Account : EntityBase
     
     public void Deposit(decimal value)
     {
+        if (value < 0)
+            throw new InvalidUpdateBalanceAccountException(value);
         Balance += value;
     }
 
     public void Withdraw(decimal value)
     {
-        if(Balance<value)
+        if(value<0)
+            throw new InvalidUpdateBalanceAccountException(value);
+        if (Balance<value)
             throw new InvalidRemoveBalanceAccountException(value);
         Balance -= value;
     }

@@ -111,3 +111,13 @@ public class InvalidRemoveBalanceAccountException(decimal Value)
     public decimal Value { get; } = Value;
 }
 
+public class InvalidUpdateBalanceAccountException(decimal value)
+    : DomainException(
+        $"The value to update the account balance must be greater than 0. Received: '{value}'.",
+        nameof(value)
+    )
+{
+    public decimal Value { get; } = value;
+}
+
+
