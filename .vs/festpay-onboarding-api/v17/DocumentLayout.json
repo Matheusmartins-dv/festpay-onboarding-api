@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\mateu\\festpay-onboarding-api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\festpay-onboarding-api\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateu\\festpay-onboarding-api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -30,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Domain\\Entities\\Account.cs",
               "RelativeDocumentMoniker": "Festpay.Onboarding.Domain\\Entities\\Account.cs",
@@ -44,6 +48,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-06-12T04:55:34.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -55,12 +76,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ValidationExtension.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Domain\\Extensions\\ValidationExtension.cs",
               "RelativeDocumentMoniker": "Festpay.Onboarding.Domain\\Extensions\\ValidationExtension.cs",
@@ -68,12 +85,11 @@
               "RelativeToolTip": "Festpay.Onboarding.Domain\\Extensions\\ValidationExtension.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T21:21:44.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T21:21:44.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EntityBase.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Domain\\Entities\\EntityBase.cs",
               "RelativeDocumentMoniker": "Festpay.Onboarding.Domain\\Entities\\EntityBase.cs",

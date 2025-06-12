@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\mateu\\festpay-onboarding-api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|c:\\users\\mateu\\festpay-onboarding-api\\festpay.onboarding.application\\features\\v1\\transact\\canceltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|solutionrelative:festpay.onboarding.application\\features\\v1\\transact\\canceltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|c:\\users\\mateu\\festpay-onboarding-api\\festpay.onboarding.application\\features\\v1\\transact\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|solutionrelative:festpay.onboarding.application\\features\\v1\\transact\\createtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|solutionrelative:festpay.onboarding.application\\features\\v1\\transact\\gettransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|c:\\users\\mateu\\festpay-onboarding-api\\festpay.onboarding.application\\features\\v1\\account\\getaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|solutionrelative:festpay.onboarding.application\\features\\v1\\account\\getaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|c:\\users\\mateu\\festpay-onboarding-api\\festpay.onboarding.application\\features\\v1\\account\\changeaccountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|solutionrelative:festpay.onboarding.application\\features\\v1\\account\\changeaccountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|c:\\users\\mateu\\festpay-onboarding-api\\festpay.onboarding.application\\features\\v1\\account\\getaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|solutionrelative:festpay.onboarding.application\\features\\v1\\account\\getaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|c:\\users\\mateu\\festpay-onboarding-api\\festpay.onboarding.application\\features\\v1\\account\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|c:\\users\\mateu\\festpay-onboarding-api\\festpay.onboarding.application\\common\\constants\\endpointconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|solutionrelative:festpay.onboarding.application\\common\\constants\\endpointconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|c:\\users\\mateu\\festpay-onboarding-api\\festpay.onboarding.application\\features\\v1\\transact\\canceltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B89B11FA-C676-42F7-B9A9-BD8DB3B4E8E5}|Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj|solutionrelative:festpay.onboarding.application\\features\\v1\\transact\\canceltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EDAAAE82-5E26-40E1-9DB9-482088406614}|Festpay.Onboarding.Infra\\Festpay.Onboarding.Infra.csproj|c:\\users\\mateu\\festpay-onboarding-api\\festpay.onboarding.infra\\context\\festpaycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,15 +86,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CreateTransaction.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\CreateTransaction.cs",
               "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\CreateTransaction.cs",
-              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\CreateTransaction.cs*",
-              "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\CreateTransaction.cs*",
-              "ViewState": "AgIAADsAAAAAAAAAAAAqwEUAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\CreateTransaction.cs",
+              "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\CreateTransaction.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAE0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T02:14:21.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetTransactions.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\GetTransactions.cs",
+              "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\GetTransactions.cs",
+              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\GetTransactions.cs",
+              "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\GetTransactions.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAACQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T02:51:52.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateAccount.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Account\\CreateAccount.cs",
+              "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Features\\V1\\Account\\CreateAccount.cs",
+              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Account\\CreateAccount.cs",
+              "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Account\\CreateAccount.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T12:24:59.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SwaggerTagsConstants.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Common\\Constants\\SwaggerTagsConstants.cs",
+              "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Common\\Constants\\SwaggerTagsConstants.cs",
+              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Common\\Constants\\SwaggerTagsConstants.cs",
+              "RelativeToolTip": "Festpay.Onboarding.Application\\Common\\Constants\\SwaggerTagsConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T08:31:36.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CancelTransaction.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\CancelTransaction.cs",
+              "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\CancelTransaction.cs",
+              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\CancelTransaction.cs",
+              "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\CancelTransaction.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAEkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T02:50:48.442Z",
               "EditorCaption": ""
             },
             {
@@ -105,40 +155,27 @@
               "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Features\\V1\\Account\\ChangeAccountStatus.cs",
               "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Account\\ChangeAccountStatus.cs",
               "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Account\\ChangeAccountStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAA3wCkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T12:25:10.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetTransactions.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\GetTransactions.cs",
-              "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\GetTransactions.cs",
-              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\GetTransactions.cs",
-              "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\GetTransactions.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAYwEIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T02:51:52.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GetAccounts.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Account\\GetAccounts.cs",
               "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Features\\V1\\Account\\GetAccounts.cs",
               "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Account\\GetAccounts.cs",
               "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Account\\GetAccounts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T02:40:13.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Domain\\Entities\\Transaction.cs",
               "RelativeDocumentMoniker": "Festpay.Onboarding.Domain\\Entities\\Transaction.cs",
@@ -146,38 +183,11 @@
               "RelativeToolTip": "Festpay.Onboarding.Domain\\Entities\\Transaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T21:37:04.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T21:37:04.764Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateAccount.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Account\\CreateAccount.cs",
-              "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Features\\V1\\Account\\CreateAccount.cs",
-              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Account\\CreateAccount.cs",
-              "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Account\\CreateAccount.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T12:24:59.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SwaggerTagsConstants.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Common\\Constants\\SwaggerTagsConstants.cs",
-              "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Common\\Constants\\SwaggerTagsConstants.cs",
-              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Common\\Constants\\SwaggerTagsConstants.cs",
-              "RelativeToolTip": "Festpay.Onboarding.Application\\Common\\Constants\\SwaggerTagsConstants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T08:31:36.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "EndpointConstants.cs",
               "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Common\\Constants\\EndpointConstants.cs",
               "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Common\\Constants\\EndpointConstants.cs",
@@ -185,21 +195,7 @@
               "RelativeToolTip": "Festpay.Onboarding.Application\\Common\\Constants\\EndpointConstants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T08:30:48.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CancelTransaction.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\CancelTransaction.cs",
-              "RelativeDocumentMoniker": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\CancelTransaction.cs",
-              "ToolTip": "C:\\Users\\mateu\\festpay-onboarding-api\\Festpay.Onboarding.Application\\Features\\V1\\Transact\\CancelTransaction.cs",
-              "RelativeToolTip": "Festpay.Onboarding.Application\\Features\\V1\\Transact\\CancelTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T02:50:48.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T08:30:48.549Z"
             },
             {
               "$type": "Document",
@@ -211,8 +207,7 @@
               "RelativeToolTip": "Festpay.Onboarding.Infra\\Context\\FestpayContextFactory.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwA0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T02:27:28.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T02:27:28.178Z"
             },
             {
               "$type": "Document",
@@ -224,8 +219,7 @@
               "RelativeToolTip": "Festpay.Onboarding.Infra\\Configurations\\TransactionConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T13:03:41.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T13:03:41.339Z"
             },
             {
               "$type": "Document",
@@ -237,8 +231,7 @@
               "RelativeToolTip": "Festpay.Onboarding.Domain\\Entities\\EntityBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:38:02.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T10:38:02.359Z"
             },
             {
               "$type": "Document",
@@ -250,8 +243,7 @@
               "RelativeToolTip": "Festpay.Onboarding.Infra\\Context\\FestpayContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T13:10:41.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T13:10:41.425Z"
             },
             {
               "$type": "Document",
@@ -263,8 +255,7 @@
               "RelativeToolTip": "Festpay.Onboarding.Domain\\Extensions\\ValidationExtension.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAABBwGgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:37:50.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T09:37:50.321Z"
             },
             {
               "$type": "Document",
@@ -276,8 +267,7 @@
               "RelativeToolTip": "Festpay.Onboarding.Domain\\Exceptions\\DomainExceptions.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAA0wF0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:51:23.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T09:51:23.398Z"
             },
             {
               "$type": "Document",
@@ -289,8 +279,7 @@
               "RelativeToolTip": "tests\\Festpay.Onboarding.Application.Tests\\Festpay.Onboarding.Application.Tests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-11T06:55:40.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T06:55:40.881Z"
             },
             {
               "$type": "Document",
@@ -302,8 +291,7 @@
               "RelativeToolTip": "Festpay.Onboarding.Application\\Festpay.Onboarding.Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-11T06:58:46.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T06:58:46.768Z"
             }
           ]
         }
