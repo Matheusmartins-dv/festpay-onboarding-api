@@ -1,10 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Festpay.Onboarding.Application",
+    "\\Festpay.Onboarding.Application\\Features",
+    "\\Festpay.Onboarding.Application\\Features\\V1",
+    "\\Festpay.Onboarding.Application\\Features\\V1\\Account",
     "\\Festpay.Onboarding.Domain",
     "\\Festpay.Onboarding.Domain\\Entities",
     "\\Festpay.Onboarding.Domain\\Extensions"
   ],
-  "SelectedNode": "\\Festpay.Onboarding.Domain\\Entities\\Transaction.cs",
+  "SelectedNode": "\\Festpay.Onboarding.Application\\Features\\V1\\Account\\GetAccounts.cs",
   "PreviewInSolutionExplorer": false
 }

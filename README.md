@@ -1,43 +1,69 @@
-# 🧪 Teste Técnico - Dev Fullstack (.NET/C#) - Festpay
+# Festpay Onboarding API
 
-## 🎯 Objetivo
+Este projeto é uma API construída com .NET 9, adotando a arquitetura **Vertical Slice**, o sistema fornece suporte a operações basicas relacionadas a Contas e Transações financeiras.
 
-Construir e manter uma api em .NET 9 utilizando o padrão CQRS afim de manter um sistema de contas e transações da Festpay. Utilizando dos métodos já existentes, construa a entidade de Transações e o seu respectivo CRUD.
-A entidade deve herdar a entidade base e possuir os seguintes dados:
+## 🔧 Arquitetura
 
-- **Conta de destino**
-- **Conta de origem**
-- **Valor**
-- **Cancelada**
-
-Deverá ser desenvolvido métodos para:
-
-- **Buscar todas as transações**
-- **Buscar uma transação pelo Id**
-- **Inserir uma transação**
-- **Cancelar uma transação**
+O projeto segue o padrão **Vertical Slice Architecture**, onde cada operação (slice) é isolada em termos de lógica, comandos, manipuladores, validações e endpoint próprio. Essa abordagem permite que cada recurso seja desenvolvido e evoluído de forma independente, promovendo coesão e separação de responsabilidades, de forma que regras de negócios continuem encapsuladas em objetos de domínio chamados entidades e a logica da aplicação continue em usecases
 
 ---
 
-**ATENÇÃO** - Não se esqueça de desenvolver os testes de domínio e testes de aplicação.
+## 📦 Funcionalidades
+
+### 🏦 Accounts (Contas)
+
+- **Criar Conta**
+  - Criação de contas no sistema.
+
+- **Depositar Dinheiro**
+  - Endpoint: `POST /accounts/deposit`
+  - Permite adicionar saldo a uma conta existente.
+
+- **Remover Dinheiro**
+  - Endpoint: `POST /accounts/remove`
+  - Permite remover saldo de uma conta existente (saque).
+
+- **Habilitar Conta**
+  - Permite reativar uma conta desabilitada.
+
+- **Desabilitar Conta**
+  - Permite desativar uma conta para impedir movimentações.
 
 ---
 
-## 🧱 Critérios de Avaliação
+### 💳 Transactions (Transações)
 
-- Separação das regras de domínio e regras de aplicação
-- Estrutura e funcionalidade do código existente e do código redigido
-- Uso correto da arquitetura definida no projeto
-- Princípios SOLID
-- Tratamento de exceções
-- Código limpo e organizado
+- **Criar Transação**
+  - Endpoint: `POST /transactions`
+  - Cria uma nova transação entre contas.
+
+- **Listar Transações**
+  - Endpoint: `GET /transactions`
+  - Lista todas as transações registradas.
+
+- **Recuperar Transação por ID**
+  - Endpoint: `GET /transactions/{id}`
+  - Retorna os detalhes de uma transação específica.
+
+- **Cancelar Transação**
+  - Endpoint: `POST /transactions/cancel`
+  - Cancela uma transação existente, se elegível.
 
 ---
 
-## 📤 Entrega
+## 📁 Organização do Projeto
 
-- Criar um fork do projeto e submetê-lo com as implementações
-- Atualizar o README com:
-  - Tecnologias utilizadas
-  - Instruções para rodar o projeto
-- As instruções para envio do projeto deverão seguir as orientações enviadas pelo recrutador.
+- `Festpay.Onboarding.Domain` → Entidades de domínio
+- `Festpay.Onboarding.Infra` → Persistência de dados, Migrations e EF Core
+- `Festpay.Onboarding.Api` → Camada de API e exposição dos endpoints
+- `Slices/` → Divisão vertical por recursos (Accounts, Transactions, etc.)
+
+---
+
+## 📌 Considerações
+
+Este projeto está em desenvolvimento contínuo e segue boas práticas de DDD (Domain-Driven Design) e Clean Architecture onde aplicável, utilizando o EF Core como ORM e SQLite como banco de dados no ambiente local.
+
+---
+
+© Festpay - 2025
