@@ -27,3 +27,11 @@ public class EntityAlreadyExistsException(string entityName)
         string.Format(ErrorMessageConstants.EntityAlreadyExists, entityName)
     )
 { }
+
+public class TransactionDoesNotBelongToAccountException(string idAccount)
+    : ApplicationException(
+        $"The transaction does not belong to the account with ID '{idAccount}'."
+    )
+{
+    public string IdAccount { get; } = idAccount;
+}
