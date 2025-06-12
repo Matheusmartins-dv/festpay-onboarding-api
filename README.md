@@ -55,8 +55,7 @@ O projeto segue o padrão **Vertical Slice Architecture**, onde cada operação 
 
 - `Festpay.Onboarding.Domain` → Entidades de domínio
 - `Festpay.Onboarding.Infra` → Persistência de dados, Migrations e EF Core
-- `Festpay.Onboarding.Api` → Camada de API e exposição dos endpoints
-- `Slices/` → Divisão vertical por recursos (Accounts, Transactions, etc.)
+- `Festpay.Onboarding.Application` → Funcionalidades separadas por entidades, cada recurso implementa um validador, usecase(handler) e endpoint
 
 ---
 
@@ -65,5 +64,3 @@ O projeto segue o padrão **Vertical Slice Architecture**, onde cada operação 
 Este projeto está em desenvolvimento contínuo e segue boas práticas de DDD (Domain-Driven Design) e Clean Architecture onde aplicável, utilizando o EF Core como ORM e SQLite como banco de dados no ambiente local.
 
 ---
-
-© Festpay - 2025
